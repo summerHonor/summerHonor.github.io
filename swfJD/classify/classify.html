@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东分类</title>
+    <link rel="stylesheet" href="classify.css">
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../Bootstrap/js/rem-media.js"></script>
+    <script src="classify.js"></script>
+</head>
+
+<body>
+<div class="search-body">
+    <nav>
+        <span class="search-back" onclick="window.history.back();">x</span>
+        <div class="search-box">
+            <input type="text" placeholder="搜索京东商品/店铺">
+            <span class="search"></span>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h2>热门搜索</h2>
+            <span class="refresh"></span>
+        </header>
+        <div class="commodity">
+            <ul>
+                <li><span>雪地靴男</span></li>
+                <li><span>钱包男款</span></li>
+                <li><span>香水女</span></li>
+                <li><span>毛毯</span></li>
+                <li><span>投影仪</span></li>
+                <li><span>PS4</span></li>
+            </ul>
+        </div>
+    </main>
+</div>
+<!--主体页面-->
+<div class="classify-body">
+    <nav>
+        <span class="back" onclick="window.history.back();"></span>
+        <div class="search-box">
+            <input type="text" class="classify-search" placeholder="京东3C 白万件爆品岂止5折">
+            <span class="navMenu"></span>
+        </div>
+        <!--隐藏菜单-->
+        <div class="topNav">
+            <ul>
+                <li class="hover" onclick="location.href='../index.html'"><span></span>
+                    <p>首页</p></li>
+                <li class="hover" onclick="location.href='/classify.html'"><span></span>
+                    <p>分类搜索</p></li>
+                <li class="hover" onclick="location.href='../shoppingCart/shoppingCart.html'"><span></span>
+                    <p>购物车</p></li>
+                <li class="hover" onclick="location.href='../myJD/myJD.html'"><span></span>
+                    <p>我的京东</p></li>
+            </ul>
+        </div>
+    </nav>
+    <!--左边菜单-->
+    <div class="leftMenu">
+        <ul>
+            <li style="color:red">热门推荐</li>
+            <li>潮流女装</li>
+            <li>品牌男装</li>
+            <li>个护化妆</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>手机数码</li>
+            <li>母婴童装</li>
+            <li>图书</li>
+            <li>家居家纺</li>
+            <li>居家生活</li>
+            <li>家具建材</li>
+            <li>食品生鲜</li>
+            <li>酒水饮料</li>
+            <li>运动户外</li>
+        </ul>
+    </div>
+    <!--右边页面盒子-->
+    <div class="rightPage">
+        <!--热门推荐 recommend-->
+        <div class="right">
+            <img class="hover" src="image/recommend.jpg" alt="">
+
+            <h2>专场推荐</h2>
+            <section class="specially">
+                <img class="hover" src="image/specially.jpg" alt="">
+            </section>
+
+            <!--热门分类 hotClassify-->
+            <span class="hotClassifyT">热门分类</span>
+            <span class="hotClassifyT hover"><small></small>&nbsp;排行榜&#62;</span>
+            <section>
+                <ul class="hover">
+                    <li><img src="image/hotClassify-sj.png" alt="">
+                        <p>手机</p>
+                    </li>
+                    <li><img src="image/hotClassify-bjb.jpg" alt="">
+                        <p>笔记本</p>
+                    </li>
+                    <li><img src="image/hotClassify-kt.jpg" alt="">
+                        <p>空调</p>
+                    </li>
+                    <li><img src="image/hotClassify-xnyp.jpg" alt="">
+                        <p>吸纳用品</p>
+                    </li>
+                    <li><img src="image/hotClassify-cg.jpg" alt="">
+                        <p>炒锅</p>
+                    </li>
+                    <li><img src="image/hotClassify-pj.jpg" alt="">
+                        <p>陪酒</p>
+                    </li>
+                    <li><img src="image/hotClassify-xdd.jpg" alt="">
+                        <p>吸顶灯</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--潮流女装  frock-->
+        <div class="right">
+            <img class="hover" src="image/frock.jpg" alt="">
+            <h2>热门活动</h2>
+            <section>
+                <ul class="hover">
+                    <li><img src="image/frock-qdsx.jpg" alt="">
+                        <p>秋冬上新</p>
+                    </li>
+                    <li><img src="image/frock-599.jpg" alt="">
+                        <p>599减200</p>
+                    </li>
+                    <li><img src="image/frock-dpmc.jpg" alt="">
+                        <p>大牌满城</p>
+                    </li>
+                    <li><img src="image/frock-pzyr.jpg" alt="">
+                        <p>品质羊绒</p>
+                    </li>
+                    <li><img src="image/frock-wnyr.jpg" alt="">
+                        <p>温暖羽绒</p>
+                    </li>
+                    <li><img src="image/frock-zynz.jpg" alt="">
+                        <p>奢华皮革</p>
+                    </li>
+                    <li><img src="image/frock-jpnz.jpg" alt="">
+                        <p>精品女装</p>
+                    </li>
+                    <li><img src="image/frock-JD.jpg" alt="">
+                        <p>JD FOR HER</p>
+                    </li>
+                    <li><img src="image/frock-zynz.jpg" alt="">
+                        <p>自营女装</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--品牌潮男 wear-->
+        <div class="right">
+            <img class="hover" src="image//men.jpg" alt="">
+            <h2>热卖选购</h2>
+            <section>
+                <ul class="hover">
+                    <li><img src="image/men-jk.jpg" alt="">
+                        <p>夹克</p>
+                    </li>
+                    <li><img src="image/men-cz.jpg" alt="">
+                        <p>衬衫</p>
+                    </li>
+                    <li><img src="image/men-wy.jpg" alt="">
+                        <p>卫衣</p>
+                    </li>
+                    <li><img src="image/men-nzk.jpg" alt="">
+                        <p>牛仔裤</p>
+                    </li>
+                    <li><img src="image/men-Tx.jpg" alt="">
+                        <p>T血</p>
+                    </li>
+                    <li><img src="image/men-xxk.jpg" alt="">
+                        <p>休闲裤</p>
+                    </li>
+                    <li><img src="image/men-zzs.jpg" alt="">
+                        <p>针织衫</p>
+                    </li>
+                    <li><img src="image/men-xf.jpg" alt="">
+                        <p>西服</p>
+                    </li>
+                    <li><img src="image/men-fy.jpg" alt="">
+                        <p>风衣</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--个护化妆 makeup-->
+        <div class="right">
+            <img class="hover" src="image/makeup.jpg" alt="">
+            <h2>面部化妆</h2>
+            <section>
+                <ul class="hover">
+                    <li><img src="image/makeup-xz.jpg" alt="">
+                        <p>卸妆</p>
+                    </li>
+                    <li><img src="image/makeup-jm.jpg" alt="">
+                        <p>洁面</p>
+                    </li>
+                    <li><img src="image/makeup-sfs.jpg" alt="">
+                        <p>爽肤水</p>
+                    </li>
+                    <li><img src="image/makeup-ryms.jpg" alt="">
+                        <p>乳液面霜</p>
+                    </li>
+                    <li><img src="image/makeup-jh.jpg" alt="">
+                        <p>精华</p>
+                    </li>
+                    <li><img src="image/makeup-ys.jpg" alt="">
+                        <p>眼霜</p>
+                    </li>
+                    <li><img src="image/makeup-fs.jpg" alt="">
+                        <p>防晒</p>
+                    </li>
+                    <li><img src="image/makeup-mm.jpg" alt="">
+                        <p>面膜</p>
+                    </li>
+                    <li><img src="image/makeup-tx.jpg" alt="">
+                        <p>剃须</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--家用电器-->
+        <div class="right">
+            <img class="hover" src="image/jydq.jpg" alt="">
+        </div>
+        <!--电脑办公-->
+        <div class="right">
+            <img class="hover" src="image/dnbg.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/sjsm.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/mytz.jpg" alt="">
+            <h2>奶粉</h2>
+            <section>
+                <ul class="hover">
+                    <li onclick="location.href='../milkPowder/milkPowder.html'"><img src="image/nf-1daun.jpg" alt="">
+                        <p>1段</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--图书-->
+        <div class="right">
+            <img class="hover" src="image/classify-ts.jpg" alt="">
+        </div>
+        <!---->
+        <div class="right">
+            <img class="hover" src="image/classify-jujf.jpg" alt="">
+        </div>
+        <!---->
+        <div class="right">
+            <img class="hover" src="image/classify-jush.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/classify-jujc.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/classify-spsx.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/classify-jsyl.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="hover" src="image/classify-hwyd.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

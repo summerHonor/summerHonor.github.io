@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东秒杀</title>
+    <link rel="stylesheet" href="secKill.css">
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../Bootstrap/js/rem-media.js"></script>
+    <script src="secKill.js"></script>
+</head>
+<body>
+<nav>
+    <span class="back" onclick="window.history.back();"></span>
+    <div class="search-box">
+        <span class="title">京东秒杀</span>
+        <span class="navMenu"></span>
+    </div>
+    <!--隐藏菜单-->
+    <div class="topNav hover">
+        <ul>
+            <li class="hover" onclick="location.href='../index.html'"><span></span>
+                <p>首页</p></li>
+            <li class="hover" onclick="location.href='../classify/classify.html'"><span></span>
+                <p>分类搜索</p></li>
+            <li class="hover" onclick="location.href='../shoppingCart/shoppingCart.html'"><span></span>
+                <p>购物车</p></li>
+            <li class="hover" onclick="location.href='../myJD/myJD.html'"><span></span>
+                <p>我的京东</p></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <header>
+        <ul>
+            <li class="header-li"><p class="time">18:00</p>
+                <p>秒杀中</p></li>
+            <li class="header-li"><p class="time">20:00</p>
+                <p>即将开场</p></li>
+            <li class="header-li"><p class="time">22:00</p>
+                <p>即将开场</p></li>
+            <li class="header-li"><p class="time">00:00</p>
+                <p>即将开场</p></li>
+            <li class="header-li"><p class="time">06:00</p>
+                <p>即将开场</p></li>
+        </ul>
+    </header>
+    <!--秒杀中-->
+    <div class="secKill-good">
+        <div class="left">
+            <img src="image/secKill-hp.jpg" alt="">
+        </div>
+        <div class="right">
+            <span>惠普(HP)ENVY 13-d046TU 13.3英寸超薄12.95mm笔记本</span><br>
+            <span>￥ 5699<br><del>￥ 7699</del></span>
+            <button>去秒杀</button>
+            <small>已秒50%</small>
+            <progress max="100" value="0"></progress>
+        </div>
+    </div>
+
+    <!--即将开场-->
+    <div class="secKill-good">
+        <div class="left">
+            <img src="image/secKill-wx.jpg" alt="">
+        </div>
+        <div class="right">
+            <span>微星(MSI)</span><br>
+            <span>￥ 8049<br><del>￥ 8999</del></span>
+            <button>提醒我</button>
+        </div>
+    </div>
+
+    <!--即将开场-->
+    <div class="secKill-good">
+        <div class="left">
+            <img src="image/secKill-xxy.jpg" alt="">
+        </div>
+        <div class="right">
+            <span>欣星宇</span><br>
+            <span>￥ 1399<br><del>￥ 1499</del></span>
+            <button>提醒我</button>
+        </div>
+    </div>
+    <!--即将开场-->
+    <div class="secKill-good">
+        <div class="left">
+            <img src="image/secKill-book.jpg" alt="">
+        </div>
+        <div class="right">
+            <span>你是我输不起的明天</span><br>
+            <span>￥ 11<br><del>￥ 17.3</del></span>
+            <button>提醒我</button>
+        </div>
+    </div>
+    <!--即将开场-->
+    <div class="secKill-good">
+        <div class="left">
+            <img src="image/secKill-bx.jpg" alt="">
+        </div>
+        <div class="right">
+            <span>美的冰箱</span><br>
+            <span>￥ 5699<br><del>￥ 7699</del></span>
+            <button>提醒我</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

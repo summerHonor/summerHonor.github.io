@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东商城</title>
+    <link rel="stylesheet" href="milkPowder.css">
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../Bootstrap/js/rem-media.js"></script>
+    <script src="milkPowder.js"></script>
+</head>
+<body>
+<nav>
+    <span class="back" onclick="window.history.back();"></span>
+    <div class="search-box">
+        <input type="text" class="classify-search" placeholder="1段 2段">
+        <span class="navMenu"></span>
+    </div>
+    <!--隐藏菜单-->
+    <div class="topNav">
+        <ul>
+            <li class="hover" onclick="location.href='../index.html'"><span></span>
+                <p>首页</p></li>
+            <li class="hover" onclick="location.href='../classify/classify.html'"><span></span>
+                <p>分类搜索</p></li>
+            <li class="hover" onclick="location.href='../shoppingCart/shoppingCart.html'"><span></span>
+                <p>购物车</p></li>
+            <li class="hover" onclick="location.href='../myJD/myJD.html'"><span></span>
+                <p>我的京东</p></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <header>
+        <div>
+            <ul>
+                <li>综合</li>
+                <li>销量</li>
+                <li>价格</li>
+                <li>筛选</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>京东配送</li>
+                <li class="drop-down">品牌<span class="triangleDown"></span></li>
+                <li class="drop-down">段位<span class="triangleDown"></span></li>
+                <li class="drop-down">适用年龄<span class="triangleDown"></span></li>
+            </ul>
+        </div>
+        <div class="brand-box" style="display: none">
+            <ul>
+                <li>爱他美（Aptamil）</li>
+                <li>惠氏（Wyeth）</li>
+                <li>雅培（Abbott）</li>
+                <li>诺优能（Nutrilon）</li>
+                <li>美素佳儿（Friso）</li>
+                <li>雀巢（Nestle）</li>
+                <li>伊利</li>
+                <li>贝因美（Beingmate）</li>
+                <li>飞鹤（FIRMUS）</li>
+                <li>喜宝（HiPP）</li>
+                <li>合生元（BIOSTIME）</li>
+                <li>完达山（wondersun）</li>
+                <li>牛栏（Cow&Gate）</li>
+                <li>A2</li>
+                <li>君乐宝（JUNLEBAO）</li>
+                <li>雅士利（Yashily）</li>
+                <li>多美滋（Dumex）</li>
+                <li>a2</li>
+                <li>可瑞康（Karicare）</li>
+                <li>贝拉米（Bellamy's）</li>
+                <li>圣元（Synutra）</li>
+                <li>佳贝艾特（Kabrita）</li>
+                <li>荷兰美素（Herobaby）</li>
+            </ul>
+            <button class="btn">重置</button>
+            <button class="btn">确定</button>
+        </div>
+        <div class="brand-box" style="display: none;">
+            <ul>
+                <li>1段</li>
+                <li>2段</li>
+                <li>3段</li>
+                <li>4段</li>
+            </ul>
+            <button class="btn">重置</button>
+            <button class="btn">确定</button>
+        </div>
+        <div class="brand-box" style="display: none;">
+            <ul>
+                <li>0-6个月</li>
+                <li>3-6岁</li>
+                <li>6-12个月</li>
+                <li>6岁以上</li>
+                <li>12-36个月</li>
+                <li>其他</li>
+            </ul>
+            <button class="btn">重置</button>
+            <button class="btn">确定</button>
+        </div>
+    </header>
+</main>
+</body>
+</html>

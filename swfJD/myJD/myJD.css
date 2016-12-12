@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background-color: #f0f2f5;
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    width: 7.2rem;
+    height: 1rem;
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.back {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background-image: url("../classify/image/back.png");
+    background-size: contain;
+    position: absolute;
+    left: 0.03rem;
+    top: 0.2rem;
+    text-decoration: none;
+}
+
+.search-box {
+    width: 95%;
+    position: absolute;
+}
+
+.title {
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.4rem;
+    text-align: center;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 0.3rem;
+    right: calc((100% - 2.5rem) / 2);
+}
+
+.navMenu {
+    display: inline-block;
+    border-left: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url("../classify/image/navMenu.png");
+    background-size: contain;
+    position: absolute;
+    right: 0.03rem;
+    top: 0.25rem;
+}
+
+/*隐藏菜单*/
+.topNav {
+    width: 7.2rem;
+    height: 1.5rem;
+    background-color: gray;
+    position: fixed;
+    top: 1rem;
+    display: none;
+    z-index: 100;
+}
+
+.topNav > ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.topNav > ul > li {
+    width: 25%;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.topNav > ul > li > span {
+    display: inline-block;
+    width: 100%;
+    height: 0.7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.topNav > ul > li:nth-of-type(1) > span {
+    background-image: url("../classify/image/classify-index.png");
+}
+
+.topNav > ul > li:nth-of-type(4) {
+    background-color: black;
+}
+
+.topNav > ul > li:nth-of-type(2) > span {
+    background-image: url("../classify/image/classify-r.png");
+}
+
+.topNav > ul > li > p {
+    width: 25%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: white;
+    font-size: 0.35rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.topNav > ul > li:nth-of-type(3) > span {
+    background-image: url("../classify/image/classify-cat.png");
+}
+
+.topNav > ul > li:nth-of-type(4) > span {
+    background-image: url("../classify/image/classify-my.png");
+}
+/*主体*/
+header {
+    width: 7.2rem;
+    height: 4rem;
+    background-image: url("image/myJD-h.png");
+    color: white;
+    background-size: contain;
+    position: relative;
+}
+
+header > div:nth-of-type(1) {
+    width: 100%;
+    height: 70%;
+}
+
+/*头像*/
+.ico {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url("image/tx.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: calc((100% - 1.5rem) / 2);
+    left: 0.5rem;
+}
+
+.ico + div {
+    width: 2.5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: calc((100% - 1rem) / 2);
+    left: 2rem;
+}
+
+.ico + div > p {
+    font-size: 0.3rem;
+}
+
+small {
+    font-size: 0.25rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0.5rem;
+}
+
+/**/
+header > div:nth-of-type(2) {
+    width: 100%;
+    height: 30%;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+}
+
+header > div:nth-of-type(2) > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc((100% / 3));
+}
+
+header > div:nth-of-type(2) > ul > li {
+    flex-grow: 1;
+    margin-right: 5px;
+    height: 1rem;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+header > div:nth-of-type(2) > ul > li>p {
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+section {
+    width: 100%;
+    margin-top: 20px;
+    height: 3rem;
+    background-color: white;
+    padding: 10px;
+}
+
+.indent {
+    font-size: 0.3rem;
+}
+
+.indent:nth-of-type(1) {
+    float: left;
+}
+
+.indent:nth-of-type(1) > img {
+    width: 0.3rem;
+    height: 0.4rem;
+}
+
+.indent:nth-of-type(2) {
+    float: right;
+}
+
+.indent:nth-of-type(2) > img {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.indent-menu {
+    padding-top: 0.4rem;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.indent-menu > li {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+}
+
+.indent-menu > li > img {
+    width: 0.8rem;
+    height: 0.5rem;
+}
+
+.indent-menu > li > p {
+    font-size: 0.3rem;
+}
+
+.left {
+    font-size: 0.3rem;
+    float: left;
+}
+
+.left > img {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.left ~ ul {
+    padding-top: 1rem;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left ~ ul > li {
+    flex-basis: 25%;
+}
+
+.left ~ ul > li > p {
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+.right {
+    width: 0.3rem;
+    height: 0.3rem;
+    float: right;
+}
+.service{
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 1.5rem;
+    background-color: white;
+}
+.service>div{
+    width: 100%;
+    height: 0.3rem;
+}
+.right-t{
+    display: inline-block;
+    width: 3.5rem;
+    font-size: 0.3rem;
+    float: right;
+}
+.right-img{
+    width: 0.35rem;
+    height: 0.35rem;
+}
+.right-tt{
+    font-size: 0.25rem;
+    float: right;
+}
+.footer-list{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.footer-list>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list>ul>li{
+    margin-bottom: 10px;
+}
+
+/*鼠标悬浮样式*/
+.hover:hover{
+    cursor: pointer;
+}

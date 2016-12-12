@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>注册</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../Bootstrap/js/rem-media.js"></script>
+    <script src="register.js"></script>
+</head>
+<body>
+<nav>
+    <div><span class="back" onclick="location.href = 'login.html'"></span>京&nbsp;东&nbsp;注&nbsp;册</div>
+</nav>
+<main>
+    <div class="form">
+        <div class="box">
+            <input class="box-input" type="text" placeholder="请输入验证码">
+            <span class="del code-del">x</span>
+            <span class="box-span"></span>
+        </div>
+        <div class="box tel">
+            <input class="tel-num" type="tel" placeholder="请输入手机号">
+            <span class="del code-del" id="TD">x</span>
+            <span class="tel-code">获取短信验证码</span>
+        </div>
+        <div class="box">
+            <input class="tel auth-code" type="tel" id="tel-auth-code" placeholder="请输入短信验证码">
+            <span class="del" id="auth-code-del">x</span>
+        </div>
+        <div class="box paw-box">
+            <input class=" tel auth-code" type="password" id="paw" placeholder="请设置6-20位数字或字母组成登录密码">
+            <span class="del paw-del">x</span>
+            <span class="paw-switch"><small class="paw-switch-ball"></small><small>...</small></span>
+        </div>
+        <footer>
+            <span class="hint"></span>
+            <input type="submit" disabled class="btn" value="注&#x3000;册">
+            <p class="agreement">注册即视为同意<a class="agreement" href="agreement.html">京东用户注册协议</a></p>
+        </footer>
+    </div>
+</main>
+</body>
+</html>

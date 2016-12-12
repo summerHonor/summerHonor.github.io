@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    /*font-size: 100px;*/
+    background-color: #f3f5f7;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 1rem;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+    padding-left: 0.5rem;
+}
+
+nav > div {
+    width: 80%;
+    height: 1rem;
+    padding-top: 0.25rem;
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.back {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url("image/back.png");
+    background-size: contain;
+    float: left;
+}
+
+main {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.box {
+    width: 100%;
+    border: 1px solid gray;
+    height: 0.8rem;
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.box-input {
+    width: 70%;
+    height: 0.7rem;
+    position: absolute;
+    top: 0.05rem;
+    padding-left: 10px;
+    border-right: 1px solid gray;
+    /*margin-right: 0.01rem;*/
+}
+
+.box-span {
+    display: inline-block;
+    width: 30%;
+    height: 0.6rem;
+    font-size: 0.5rem;
+    color: red;
+    text-align: center;
+    position: absolute;
+    top: 0.05rem;
+    right: 0;
+    background-image: url("image/verificationCode-bg.png");
+    background-size: contain;
+}
+
+.tel {
+    padding: 0;
+    height: 0.8rem;
+    border: none;
+}
+
+.tel-num {
+    height: 100%;
+    width: 60%;
+    border: 1px solid gray;
+    position: absolute;
+    top: 0;
+    color: gray;
+}
+
+.tel-code {
+    width: 35%;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.8rem;
+    background-color: rgba(200, 200, 200, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+}
+
+.auth-code {
+    width: 100%;
+    height: 95%;
+    border-right: none;
+    position: absolute;
+    top: 0;
+}
+
+.del {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: gray;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    color: white;
+    display: none;
+}
+
+.code-del {
+    margin-right: 2.8rem;
+}
+
+.paw-box {
+    border: none;
+}
+
+#paw {
+    border: 1px solid gray;
+}
+
+.paw-del {
+    position: absolute;
+    top: 0.15rem;
+    right: 1.5rem;
+}
+
+.paw-switch {
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.6rem;
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0.08rem;
+    right: 0.15rem;
+    line-height: 0.3rem;
+}
+
+.paw-switch-ball {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    position: absolute;
+    top: calc((100% - 0.5rem) / 2);
+    left: 0;
+}
+
+.paw-switch-ball + small {
+    display: inline-block;
+    font-size: 0.5rem;
+    color: gray;
+    position: absolute;
+    top: -0.06rem;
+    right: 0.1rem;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.hint {
+    color: red;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 100%;
+    height: 1rem;
+    color: black;
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.agreement {
+    font-size: 0.3rem;
+}
+
+.agreement > a {
+    color: red;
+}
+
+.agreement > a:before {
+    content: '《';
+    font-size: 0.3rem;
+    color: red;
+}
+
+.agreement > a:after {
+    content: '》';
+    font-size: 0.3rem;
+    color: red;
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东商城首页</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index/index.css">
+    <script src="Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/rem-media.js"></script>
+    <script src="index/index.js"></script>
+</head>
+<body>
+<div id="TTTTTOP"></div>
+<div class="ad">
+    <span class="close">x</span>
+    <div class="ad-matter">
+        <span class="ad-logo"></span>
+        <span class="ad-t">
+            <small>打开京东APP购物</small>
+            <small>新人领188元红包</small>
+        </span>
+    </div>
+    <span class="open">立即打开</span>
+</div>
+<a href="#TTTTTOP"><span class="toTop"></span></a>
+<div class="nav" id="topNav">
+    <span class="logo"></span>
+    <input onclick="location.href = 'index/search.html'" type="text" class="search" placeholder="搜索京东商品/店铺">
+    <span class="search-g"></span>
+    <a href="login&register/login.html" class="login-a">登录</a>
+</div>
+<div class="nav" id="nav">
+    <span class="logo"></span>
+    <input onclick="location.href = 'index/search.html'" type="text" class="search" placeholder="搜索京东商品/店铺">
+    <span class="search-g"></span>
+    <a href="login&register/login.html" class="login-a">登录</a>
+</div>
+<!--轮播图-->
+<div class="container-fluid" style="padding: 0">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <!--data-target="#carousel-example-generic"-->
+            <li style="width: 6px;height:6px" data-slide-to="0" class="active"></li>
+            <li style="width: 6px;height:6px" data-slide-to="1"></li>
+            <li style="width: 6px;height:6px" data-slide-to="2"></li>
+            <li style="width: 6px;height:6px" data-slide-to="3"></li>
+            <li style="width: 6px;height:6px" data-slide-to="4"></li>
+            <li style="width: 6px;height:6px" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="index/image/1.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="index/image/2.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="index/image/3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="index/image/4.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="index/image/5.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="index/image/6.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!--轮播图下-->
+<main>
+    <!--菜单-->
+    <ul class="menu-box">
+        <li><img src="index/image/jdcs.png" alt="">
+            <p>京东超市</p></li>
+        <li><img src="index/image/qqg.png" alt="">
+            <p>全球购</p></li>
+        <li><img src="index/image/fzc.png" alt="">
+            <p>服装城</p></li>
+        <li><img src="index/image/sx.png" alt="">
+            <p>生鲜</p></li>
+        <li><img src="index/image/czzx.png" alt="">
+            <p>充值中心</p></li>
+        <li><img src="index/image/hcp.png" alt="">
+            <p>火车票</p></li>
+        <li><img src="index/image/jdjr.png" alt="">
+            <p>京东金融</p></li>
+        <li><img src="index/image/lj.png" alt="">
+            <p>领劵</p></li>
+        <li><img src="index/image/wlcx.png" alt="">
+            <p>物流查询</p></li>
+        <li><img src="index/image/wdgz.png" alt="">
+            <p>我的关注</p></li>
+    </ul>
+    <!--快报-->
+    <div class="bulletin-box">
+        <a href="#" style="float: left;height: 0.5rem"><img class="bulletin-ico" src="index/image/jd-news-tit.png" alt=""></a>
+        <ul class="bulletin-news">
+            <li class="bulletin-item"><a href="#">
+                <small style="color: red">荐&nbsp;</small>
+                华为荣耀手表S1</a>
+            </li>
+            <li class="bulletin-item"><a href="#">
+                <small style="color: red">爆&nbsp;</small>
+                1024程序员节</a>
+            </li>
+            <li class="bulletin-item"><a href="#">
+                <small style="color: red">抢&nbsp;</small>
+                智能手表五折</a>
+            </li>
+        </ul>
+        <span class="bulletin-more"><a href="#">更多</a></span>
+    </div>
+
+    <!--秒杀-->
+    <div class="secKill-box">
+        <div class="secKill-nav">
+            <img class="secKill-ico" src="index/image/secKill.png" alt="">
+            <span class="secKill-title">京东秒杀</span>
+            <span class="secKill-time">
+                <small class="secKill-hour">02</small>
+                &nbsp;:<small class="secKill-minute">02</small>
+                &nbsp;:<small class="secKill-second">15</small>
+            </span>
+            <a href="secKill/secKill.html" style="float: right">更多秒杀&#62;</a>
+        </div>
+        <div class="secKill-commodity-box">
+            <ol class="secKill-commodity hover" onclick="location.href='secKill/secKill.html'">
+                <li><img src="index/image/secKill1.jpg" alt="">
+                    <span>超值</span>
+                </li>
+                <li><img src="index/image/secKill2.jpg" alt="">
+                    <span>热卖</span>
+                </li>
+                <li><img src="index/image/secKill3.jpg" alt="">
+                    <span>推荐</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!--促销打折-->
+    <div class="marketing">
+        <img src="index/image/marketing.jpg" alt="">
+        <div class="marketing-show">
+            <strong>排行榜</strong>
+            <p>热卖爆品省心购</p>
+            <span>轻松选好物</span>
+            <img src="index/image/marketing-show1.png" alt="">
+        </div>
+        <div class="marketing-show">
+            <strong>闪购</strong>
+            <p>阿迪NEO4折</p>
+            <img src="index/image/marketing-show2.png" alt="">
+        </div>
+    </div>
+
+    <!--爱生活-->
+    <div class="love-live-box">
+        <img src="index/image/love-live.png" class="bigImg" alt="">
+        <div class="marketing-show" style="top: 1rem;">
+            <strong>玩3C</strong>
+            <p>z11miniS开枪</p>
+            <img src="index/image/love-live-3c.png" alt="">
+        </div>
+        <div class="marketing-show" style="top: 1rem;">
+            <strong>京东家电</strong>
+            <p>取暖低至5折</p>
+            <span>爆款提前抢</span>
+            <img src="index/image/love-live-jd.png" alt="">
+        </div>
+        <!--222222222222-->
+        <div class="marketing-show love-live-show">
+            <strong>京东超市</strong>
+            <p>个护清洁狂欢购</p>
+            <span>第二件0元</span>
+            <img src="index/image/love-live-cs.png" alt="">
+        </div>
+        <div class="marketing-show love-live-show">
+            <strong>爱家</strong>
+            <p>家纺品类</p>
+            <img src="index/image/love-live-jf.png" alt="">
+        </div>
+        <!--爱生活列表  .container-fluid-->
+        <div class=".container" style="margin-top: 5rem;padding-left:10px;background-color: white">
+            <div class="row love-live-row">
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>爱宝宝</strong>
+                    <p>能打电话的手表</p>
+                    <img src="index/image/love-live-abb.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>爱美丽</strong>
+                    <p>红石榴面膜</p>
+                    <img src="index/image/love-live-aml.png" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>爱吃</strong>
+                    <p>跨店买3免1</p>
+                    <img src="index/image/love-live-ac.png" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>爱逛</strong>
+                    <p>保暖100-399</p>
+                    <img src="index/image/love-live-ag.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--爱生活下轮播图-->
+    <div class="container-fluid" style="margin-top: 10px;padding: 5px;">
+        <div class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <!--data-target="#carousel-example-generic"-->
+                <li style="width: 6px;height:6px" data-slide-to="0" class="active"></li>
+                <li style="width: 6px;height:6px" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="index/image/z11mini.png" alt="...">
+                </div>
+                <div class="item">
+                    <img src="index/image/lssp.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--享品质-->
+    <div class="enjoyCharacter-box">
+        <img src="index/image/enjoyCharacter.png" class="bigImg" alt="">
+        <!---->
+        <div class="marketing-show enjoyCharacter-show">
+            <strong>全球购自营</strong>
+            <p>保健品两件五折</p>
+            <span>新西兰进口</span>
+            <img src="index/image/enjoyCharacter-qqgzy.jpg" alt="">
+        </div>
+        <div class="marketing-show enjoyCharacter-show">
+            <strong>环球时尚</strong>
+            <p>大牌低至3折</p>
+            <img src="index/image/enjoyCharacter-hqss.png" alt="">
+        </div>
+        <!--222222222222-->
+        <div class="marketing-show enjoyCharacter-show" style="margin-top: 1rem">
+            <strong>健康运动</strong>
+            <p>运动户外暖季</p>
+            <img src="index/image/enjoyCharacter-jkyd.png" alt="">
+        </div>
+        <div class="marketing-show enjoyCharacter-show" style="margin-top: 1rem">
+            <strong>奢品大牌</strong>
+            <p>泰格豪雅热卖</p>
+            <span>品质生活</span>
+            <img src="index/image/enjoyCharacter-spdp.jpg" alt="">
+        </div>
+        <!--333333333-->
+        <div class="marketing-show enjoyCharacter-show" style="margin-top: 2rem">
+            <strong>珠宝首饰</strong>
+            <p>黑玛瑙佛珠手链</p>
+            <span>情侣生肖款</span>
+            <img src="index/image/enjoyCharacter-zbss.jpg" alt="">
+        </div>
+        <div class="marketing-show enjoyCharacter-show" style="margin-top: 2rem">
+            <strong>达人精选</strong>
+            <p>混搭叠穿正对季</p>
+            <img src="index/image/enjoyCharacter-drjx.png" alt="">
+        </div>
+    </div>
+    <!--购特色-->
+    <div class="featureShopping-box">
+        <!--小轮播图-->
+        <div class="container-fluid" style="margin-top:10px;padding: 5px;">
+            <div class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <!--data-target="#carousel-example-generic"-->
+                    <li style="width: 6px;height:6px" data-slide-to="0" class="active"></li>
+                    <li style="width: 6px;height:6px" data-slide-to="1"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="index/image/lljd.png" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="index/image/sonny.png" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--轮播结束，购特色-->
+        <img src="index/image/featureShopping.png" class="bigImg" alt="">
+
+        <div class=".container" style="padding-left:10px;background-color: white">
+            <div class="row love-live-row" style="position: relative">
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>智能生活</strong>
+                    <p>可读微信信息</p>
+                    <img src="index/image/featureShopping-znsh.png" style=" position: absolute;top: 0;right: 0;width: 2rem;height: 2rem" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>白条商城</strong>
+                    <p>0首付购疯7</p>
+                    <img src="index/image/featureShopping-btsc.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>京东众筹</strong>
+                    <p>0元试驾</p>
+                    <img src="index/image/featureShopping-jdzc.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--222222222222222-->
+        <div class=".container" style="margin-top: 0.3rem;padding-left:10px;background-color: white">
+            <div class="row love-live-row" style="position: relative">
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>团购</strong>
+                    <p>16款新款限时降</p>
+                    <img src="index/image/featureShopping-tg.png" style=" position: absolute;top: 3px;right: 3px;width: 2rem;height: 2rem" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>京东旅游</strong>
+                    <p>爱旅游爱生活</p>
+                    <img src="index/image/featureShopping-jdly.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>电影娱乐</strong>
+                    <p>1元华为nova</p>
+                    <img src="index/image/featureShopping-dyyl.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class=".container" style="margin-top: 10px;padding-left:10px;background-color: white">
+            <div class="row love-live-row">
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>爱车生活</strong>
+                    <p>低至66元每L</p>
+                    <img src="index/image/featureShopping-acsh.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>陪伴宝宝</strong>
+                    <p>5折秒杀</p>
+                    <img src="index/image/featureShopping-pbbb.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>清仓二手</strong>
+                    <p>1折起</p>
+                    <img src="index/image/featureShopping-qces.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>京东拍卖</strong>
+                    <p>精典名品典藏</p>
+                    <img src="index/image/featureShopping-jdpm.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--小轮播图-->
+    <div class="container-fluid" style="margin-top: 10px;padding: 5px;">
+        <div class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <!--data-target="#carousel-example-generic"-->
+                <li style="width: 6px;height:6px" data-slide-to="0" class="active"></li>
+                <li style="width: 6px;height:6px" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="index/image/yxlm.png" alt="...">
+                </div>
+                <div class="item">
+                    <img src="index/image/lsfb.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--逛商场-->
+    <div class="shopping-box">
+        <img src="index/image/shopping.png" class="bigImg" alt="">
+        <div class=".container" style="padding-left:10px;background-color: white">
+            <div class="row love-live-row" style="position: relative">
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>大家电馆</strong>
+                    <p>最高见1500</p>
+                    <img src="index/image/shopping-djdg.png" style=" position: absolute;top: 0;right: 0;width: 2rem;height: 2rem" alt="">
+                </div>
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>手机数码</strong>
+                    <p>荣耀畅玩6X抢</p>
+                    <img src="index/image/shopping-sjsm.png" style=" position: absolute;top: 0;right: 0;width: 2rem;height: 2rem" alt="">
+                </div>
+            </div>
+            <div class="row love-live-row" style="position: relative;margin-top: 1.5rem">
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>美食城</strong>
+                    <p>跨店3免1</p>
+                    <img src="index/image/shopping-msc.png" style=" position: absolute;top: 0;right: 0;width: 2rem;height: 2rem" alt="">
+                </div>
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>时尚馆</strong>
+                    <p>毛呢满599减200</p>
+                    <img src="index/image/shopping-ssg.png" style=" position: absolute;top: 0;right: 0;width: 2rem;height: 2rem" alt="">
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class=".container" style="margin-top: 1.5rem;padding-left:10px;background-color: white">
+            <div class="row love-live-row">
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>中外名酒</strong>
+                    <p>3件8折</p>
+                    <img src="index/image/shopping-zwmj.png" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>电脑办公</strong>
+                    <p>5折电脑疯抢</p>
+                    <img src="index/image/shopping-dnbg.png" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>鞋靴箱包</strong>
+                    <p>箱包29元起</p>
+                    <img src="index/image/shopping-xxxb.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>小家电官</strong>
+                    <p>低至5折</p>
+                    <img src="index/image/shopping-xjdg.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class=".container" style="margin-top: 0.3rem;padding-left:10px;background-color: white">
+            <div class="row love-live-row">
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>生鲜</strong>
+                    <p>猕猴桃1.2</p>
+                    <img src="index/image/shopping-sx.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>家装城</strong>
+                    <p>家纺400-799</p>
+                    <img src="index/image/shopping-jzc.png" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>图书音像</strong>
+                    <p>满300减100</p>
+                    <img src="index/image/shopping-tsyx.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-md-3" style="padding: 0">
+                    <strong>个护清洁</strong>
+                    <p>第二件0元</p>
+                    <img src="index/image/shopping-ghqj.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--超级家纺日图片-->
+    <img src="index/image/cjjfr.jpg" style="width: 100%;height: 2.5rem" alt="">
+    <!--好店-->
+    <div class="goodShop">
+        <img src="index/image/goodShop.png" class="bigImg" alt="">
+        <div class=".container" style="padding:20px;background-color: white">
+            <div class="row love-live-row">
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>精选</strong>
+                    <p>20家好店为你精心推荐</p>
+                    <img src="index/image/goodShop-tlz1.jpg" style="width: 45%;height: 1rem"" alt="">
+                    <img src="index/image/goodShop-tlz2.jpg" style="width: 45%;height: 1rem"" alt="">
+                </div>
+                <div class="col-xs-6 col-md-6" style="padding: 0">
+                    <strong>女装</strong>
+                    <p>女神教室</p>
+                    <img src="index/image/goodShop-sm1.jpg" style="width: 45%;height: 1rem" alt="">
+                    <img src="index/image/goodShop-sm2.jpg" style="width: 45%;height: 1rem"" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="footerNav">
+            <a href="login&register/login.html"><span>登录</span></a>
+            <a href="login&register/register.html"><span>注册</span></a>
+            <a href="#"><span>反馈</span></a>
+            <a href="#TTTTTOP"><span>回到顶部</span></a>
+        </div>
+        <div class="footerNav-app">
+            <ul>
+                <li><a href="#"><img src="index/image/app.png" alt=""></a></li>
+                <li><a href="#"><img src="index/image/tochApp.png" alt=""></a></li>
+                <li><a href="#"><img src="index/image/pc.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</main>
+<div class="bottom-nav">
+    <ul>
+        <li><a href="index.html"><img src="index/image/index.png" alt=""></a></li>
+        <li><a href="classify/classify.html"><img src="index/image/classify.png" alt=""></a></li>
+        <li><a href=""><img src="index/image/find.png" alt=""></a></li>
+        <li><a href="shoppingCart/shoppingCart.html"><img src="index/image/shoppingCart.png" alt=""></a></li>
+        <li><a href="myJD/myJD.html"><img src="index/image/my.png" alt=""></a></li>
+    </ul>
+</div>
+</body>
+</html>

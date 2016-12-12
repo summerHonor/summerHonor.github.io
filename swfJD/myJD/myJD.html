@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的京东</title>
+    <link rel="stylesheet" href="myJD.css">
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../Bootstrap/js/rem-media.js"></script>
+
+</head>
+<body>
+<nav>
+    <span class="back" onclick="window.history.back();"></span>
+    <div class="search-box">
+        <span class="title">我的京东</span>
+        <span class="navMenu"></span>
+    </div>
+    <!--隐藏菜单-->
+    <div class="topNav hover">
+        <ul>
+            <li class="hover" onclick="location.href='../index.html'"><span></span>
+                <p>首页</p></li>
+            <li class="hover" onclick="location.href='../classify/classify.html'"><span></span>
+                <p>分类搜索</p></li>
+            <li class="hover" onclick="location.href='../shoppingCart/shoppingCart.html'"><span></span>
+                <p>购物车</p></li>
+            <li class="hover" onclick="location.href='/myJD.html'"><span></span>
+                <p>我的京东</p></li>
+        </ul>
+    </div>
+</nav>
+<main >
+    <header class="hover">
+        <div><span class="ico"></span>
+            <div><p>SWF</p>
+                <p>铜牌会员</p></div>
+            <small>账号管理、收货地址 &#62;</small>
+        </div>
+        <div>
+            <ul>
+                <li><p>0</p>
+                    <p>关注的商品</p></li>
+                <li><p>0</p>
+                    <p>关注的店铺</p></li>
+                <li><p>0</p>
+                    <p>我的浏览记录</p></li>
+            </ul>
+        </div>
+    </header>
+    <!--订单-->
+    <section class="hover">
+        <div>
+            <span class="indent"><img src="image/myJD-dd.png" alt="">&#x3000;我的订单</span>
+            <span class="indent">全部记录<img src="image/myJD-right.png" alt=""></span>
+            <ul class="indent-menu">
+                <li><img src="image/myJD-dfk.png" alt="">
+                    <p>待付款</p></li>
+                <li><img src="image/myJD-dsh.png" alt="">
+                    <p>待收货</p></li>
+                <li><img src="image/myJD-th.png" alt="">
+                    <p>退货/退换</p></li>
+            </ul>
+        </div>
+    </section>
+    <!--钱包-->
+    <section class="hover">
+        <div>
+            <span class="left"><img src="image/myJD-qb.png" alt="">&#x3000;我的钱包</span>
+            <img class="right" src="image/myJD-right.png" alt="">
+            <ul>
+                <li><p>0.0</p>
+                    <p>账户余额</p></li>
+                <li><p>0</p>
+                    <p>优惠券</p></li>
+                <li><p>0</p>
+                    <p>京豆</p></li>
+                <li><p>0</p>
+                    <p>京东卡/E卡</p></li>
+            </ul>
+        </div>
+    </section>
+    <div class="service hover">
+        <div>
+            <span class="left"><img src="image/myJD-fwgj.png" alt="">&#x3000;服务管家</span>
+            <span class="right-t">退修/退换货、在线客服<img class="right-img" src="image/myJD-right.png" alt=""></span>
+        </div>
+        <div style="margin-top: 0.5rem">
+            <span class="left"><img class="" src="image/myJD-jdhy.png" alt="">&#x3000;京东会员</span>
+            <span class="right-tt">会员俱乐部<img class="right-img" src="image/myJD-right.png" alt=""></span>
+        </div>
+    </div>
+    <div class="footer-list hover">
+        <ul>
+            <li>
+                <span class="left"><img src="image/myJD-my11.png" alt="">&#x3000;我的双11</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-zhc.png" alt="">&#x3000;11.11主会场</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-qhgl.png" alt="">&#x3000;抢货攻略</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-bmqd.png" alt="">&#x3000;必买清单</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-1yqb.png" alt="">&#x3000;1元抢宝</span>
+                <span class="right-tt">1元成就梦想<img class="right-img" src="image/myJD-right.png" alt=""></span>
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-jdfk.png" alt="">&#x3000;京东福卡</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-wdyy.png" alt="">&#x3000;我的预约</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-wdbgm.png" alt="">&#x3000;我的必购码</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+            <li>
+                <span class="left"><img src="image/myJD-1yqb.png" alt="">&#x3000;应用推荐</span>
+                <img class="right" src="image/myJD-right.png" alt="">
+            </li>
+        </ul>
+    </div>
+</main>
+</body>
+<script>
+    //隐藏菜单
+    $('.navMenu').click(function () {
+        $('.topNav').toggle();
+        if ($('.topNav').css('display') == 'block') {
+            $('.leftMenu').css('top', '2.5rem');
+            $('.rightPage').css('top', '2.5rem');
+            $('main').css('marginTop', '2.5rem');
+        } else {
+            $('.leftMenu').css('top', '1rem');
+            $('.rightPage').css('top', '1rem');
+            $('main').css('marginTop', '0');
+        }
+    });
+</script>
+</html>
