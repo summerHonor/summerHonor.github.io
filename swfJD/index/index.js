@@ -51,13 +51,13 @@ $(function () {
             $('.secKill-minute').text(parseInt($('.secKill-minute').text()) - 1);
             var min = $('.secKill-minute').text() < 10 ? '0' + $('.secKill-minute').text() : $('.secKill-minute').text();
             $('.secKill-minute').text(min);
-            if ($('.secKill-minute').text() == '00') {
+            if ($('.secKill-minute').text() == '0-1') {
                 $('.secKill-minute').text(59);
                 //
                 $('.secKill-hour').text(parseInt($('.secKill-hour').text()) - 1);
                 var hour = $('.secKill-hour').text() > 10 ? $('.secKill-hour').text() : '0' + $('.secKill-hour').text();
                 $('.secKill-hour').text(hour);
-                if ($('.secKill-hour').text == '00') {
+                if ($('.secKill-hour').text == '0-1') {
                     $('.secKill-hour').text('02')
                 }
             }
