@@ -1,0 +1,21 @@
+<button class="btn btn-primary" ng-click="btnAdd()">添加</button>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>姓名</th>
+            <th>手机</th>
+            <th>邮箱</th>
+            <th>QQ</th>
+            <th>简介</th>
+		</tr>
+	</thead>
+	<tbody ng-repeat="p in list">
+	<tr>
+		<td>{{p.name}}</td>
+		<td>{{p.phone}}</td>
+		<td>{{p.email}}</td>
+		<td>{{p.qq}}</td>
+		<td>{{p.intro}}</td>
+	</tr>
+	</tbody>
+</table>

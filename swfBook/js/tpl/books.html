@@ -1,0 +1,21 @@
+<style>
+    .bookT{
+        border:1px solid red;
+
+    }
+    .bookT td{
+        border:1px solid red;
+    }
+</style>
+<table class="bookT">
+    <tr>
+        <th>序号</th>
+        <th>图片</th>
+        <th>书名</th>
+    </tr>
+    <tr ng-repeat="book in books">
+        <td>{{$index+1}}</td>
+        <td><img ng-src="{{book.img}}" alt=""></td>
+        <td>{{book.title}}</td>
+    </tr>
+</table>

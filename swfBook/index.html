@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>服务</title>
+    <style>
+        .book-table thead td{
+            text-align:center
+        }
+        .book-table tr td:nth-child(1){
+            width:50px;
+            text-align: center;
+        }
+        .book-table{
+            border: 1px solid grey;
+        }
+        .book-table td{
+            border-bottom: 1px solid pink;
+            border-right: 1px solid pink;
+        }
+
+    </style>
+</head>
+
+<body>
+<div ng-app="app" ng-controller="mainCtrl">
+    <button data-type="book_ertong" ng-click="btnTab('ertong')">儿童</button>
+    <button data-type="book_lishi" ng-click="btnTab('lishi')">历史</button>
+    <button data-type="book_dongman" ng-click="btnTab('dongman')">动漫</button>
+    <button data-type="book_qingchunwenxue" ng-click="btnTab('qingchunwenxue')">青春文学</button>
+    <table class="book-table">
+        <thead>
+        <tr>
+            <td>序号</td>
+            <td>图片</td>
+            <td>书名</td>
+            <td>作者</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in books">
+            <td>{{$index+1}}</td>
+            <td>
+                <a target="_blank" href="{{item.link}}">
+                    <img ng-src="{{item.img}}" alt="">
+                </a>
+            </td>
+            <td>{{item.title}}</td>
+            <td>{{item.author}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="./js/lib/angular.min.js"></script>
+<script src="book.js"></script>
+</body>
+
+</html>

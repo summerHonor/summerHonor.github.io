@@ -1,5 +1,5 @@
 /**
- * Created by SWF on 2016/10/30.
+ * Created by SWF 
  */
 $(function () {
     //广告  导航条

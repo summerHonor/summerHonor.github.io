@@ -1,0 +1,9 @@
+选择游戏类型
+<select ng-model="selGT" ng-change="selGTChange()">
+    <option ng-repeat="k in gameTypes" value="{{k.id}}">{{k.name}}</option>
+</select>
+
+选择游戏名
+<select ng-model="selG">
+    <option ng-repeat="g in games" value="{{g.id}}">{{g.name}}</option>
+</select>

@@ -1,0 +1,31 @@
+<form >
+	<legend>信息编辑</legend>
+
+	<div class="form-group">
+		<label for="">姓名：</label>
+		<input type="text" class="form-control" name="userName"
+               ng-model="person.name" id="userName" placeholder="姓名">
+
+	</div>
+    <div class="form-group">
+        <label for="">手机：</label>
+        <input type="text" class="form-control" name="phone"
+               ng-model="person.phone" id="phone" placeholder="手机号">
+    </div>
+    <div class="form-group">
+        <label for="">QQ：</label>
+        <input type="text" class="form-control" name="qq"
+               ng-model="person.qq" id="qq" placeholder="QQ号">
+    </div>
+    <div class="form-group">
+        <label for="">邮箱：</label>
+        <input type="text" class="form-control" name="email"
+               ng-model="person.email" id="email" placeholder="邮箱">
+    </div>
+    <div class="form-group">
+        <label for="">简介：</label>
+        <input type="text" class="form-control" name="ntro"
+               ng-model="person.intro" id="intro" placeholder="简介">
+    </div>
+	<button type="submit" ng-click="btnSave()" class="btn btn-primary">提交</button>
+</form>
